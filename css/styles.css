@@ -1,3 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@700&family=Libre+Franklin:wght@100&family=Montserrat:wght@100;200;300;400;500;600&family=Open+Sans:wght@700&family=Poppins:wght@100;200;300;400;500;600&display=swap");
+:root {
+  --yellow: #f5bf23;
+  --black: #111;
+  --white: #fff;
+  --light-color: #666;
+  --light-bg: #eee;
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  --border: .1rem solid rgba(0, 0, 0, .3);
+}
 
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
 
 /*# sourceMappingURL=styles.css.map */
