@@ -83,6 +83,19 @@ html::-webkit-scrollbar-thumb {
 .header #menu-btn {
   display: none;
 }
+.header .search-form {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70rem;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 
 @media (max-width: 1200px) {
   .header {
