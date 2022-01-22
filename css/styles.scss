@@ -34,6 +34,28 @@
     text-transform: capitalize;
 }
 
+@mixin graphText($graphSize){
+    font-size: $graphSize;
+    color: var(--light-color);
+    line-height: 1.5;
+}
+
+@mixin iconsBox(){
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    background: var(--light-bg);
+    color: var(--black);
+    cursor: pointer;
+    text-align: center;
+
+    &:hover {
+        background: var(--black);
+        color: var(--white);
+    }
+}
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -64,6 +86,32 @@ html {
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
+
+    .logo {
+        @include titleText(2.5rem);
+
+        span {
+            color: var(--yellow);
+        }
+    }
+
+    .navbar a {
+        @include titleText(2rem);
+        margin: 0 1rem;
+
+        &:hover {
+            color: var(--yellow);
+        }
+    }
+
+    .icons div {
+        @include iconsBox();
+        margin-left: .3rem;
+    }
+
+    #menu-btn {
+        display: none;
+    }
 }
 
 
@@ -73,6 +121,45 @@ html {
 
 
 
+
+
+
+
+//Media-Queries
+@media (wax-width: 1200px){
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media (wax-width: 991px){
+
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        #menu-btn {
+            display: inline-block;
+        }
+
+        .navbar {
+            position: absolute;
+            top: 99%;
+            left: 0;
+            right: 0;
+            background: var(--white);
+        }
+    }
+}    
+
+@media (wax-width: 450px){
+
+    html {
+        font-size: 50%;
+    }
+} 
 
 
 // sass --watch ./css/styles.scss:./css/styles.css
