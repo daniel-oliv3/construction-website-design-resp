@@ -84,14 +84,22 @@ html::-webkit-scrollbar-thumb {
   display: none;
 }
 
-@media (wax-width: 1200px) {
+@media (max-width: 1200px) {
   .header {
     padding: 1.5rem 2rem;
   }
+
+  section {
+    padding: 3rem 5%;
+  }
 }
-@media (wax-width: 991px) {
+@media (max-width: 991px) {
   html {
     font-size: 55%;
+  }
+
+  section {
+    padding: 3rem 2rem;
   }
 
   .header #menu-btn {
@@ -103,11 +111,44 @@ html::-webkit-scrollbar-thumb {
     left: 0;
     right: 0;
     background: var(--white);
+    border-top: var(--border);
+    border-bottom: var(--border);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 0.2s linear;
+  }
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .navbar a {
+    display: block;
+    margin: 2rem;
   }
 }
-@media (wax-width: 450px) {
+@media (max-width: 768px) {
+  .header .search-form {
+    width: 90%;
+  }
+  .header .login-form {
+    width: 90%;
+  }
+
+  .home .slide {
+    justify-content: center;
+  }
+  .home .slide .content {
+    text-align: center;
+  }
+  .home .slide .content h3 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+
+  .about .row .content h3 {
+    font-size: 2.5rem;
   }
 }
 

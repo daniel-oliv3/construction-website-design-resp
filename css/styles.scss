@@ -37,7 +37,7 @@
 @mixin graphText($graphSize){
     font-size: $graphSize;
     color: var(--light-color);
-    line-height: 1.5;
+    line-height: 2;
 }
 
 @mixin iconsBox(){
@@ -126,41 +126,89 @@ html {
 
 
 //Media-Queries
-@media (wax-width: 1200px){
+@media (max-width:1200px){
 
-    .header {
-        padding: 1.5rem 2rem;
+    .header{
+       padding:1.5rem 2rem;
     }
-}
-
-@media (wax-width: 991px){
-
-    html {
-        font-size: 55%;
+ 
+    section{
+       padding:3rem 5%;
     }
-
-    .header {
-        #menu-btn {
-            display: inline-block;
-        }
-
-        .navbar {
-            position: absolute;
-            top: 99%;
-            left: 0;
-            right: 0;
-            background: var(--white);
-        }
+ }
+ 
+ @media (max-width:991px){
+ 
+    html{
+       font-size: 55%;
     }
-}    
-
-@media (wax-width: 450px){
-
-    html {
-        font-size: 50%;
+ 
+    section{
+       padding:3rem 2rem;
     }
-} 
-
-
-// sass --watch ./css/styles.scss:./css/styles.css
-
+ 
+    .header{
+ 
+       #menu-btn{
+          display: inline-block;
+       }
+ 
+       .navbar{
+          position: absolute;
+          top:99%; left:0; right:0;
+          background: var(--white);
+          border-top: var(--border);
+          border-bottom: var(--border);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          transition:.2s linear;
+ 
+          &.active{
+             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          }
+ 
+          a{
+             display: block;
+             margin:2rem;
+          }
+       }
+    }
+ 
+ }
+ 
+ @media (max-width:768px){
+ 
+    .header{
+ 
+       .search-form{
+          width: 90%;
+       }
+ 
+       .login-form{
+          width: 90%;
+       }
+    }
+ 
+    .home .slide{
+       justify-content: center;
+ 
+       .content{
+          text-align: center;
+ 
+          h3{
+             font-size: 3rem;
+          }
+       }
+    }
+ }
+ 
+ @media (max-width:450px){
+ 
+    html{
+       font-size: 50%;
+    }
+ 
+    .about .row .content h3{
+       font-size: 2.5rem;
+    }
+ 
+ }
