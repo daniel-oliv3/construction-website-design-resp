@@ -75,6 +75,13 @@ html {
     }
 }
 
+@keyframes fadeIn {
+    0%{
+        top: 50%;
+        opacity: 0;
+    }
+}
+
 .header {
     position: sticky;
     top: 0;
@@ -122,10 +129,14 @@ html {
         background: var(--white);
         box-shadow: var(--box-shadow);
         padding: 1rem;
-        display: flex;
+        display: none;
         align-items: center;
         gap: 1rem;
+        animation: fadeIn .2s linear;
 
+        &:active {
+            display: flex;
+        }
 
         input {
             width: 100%;
@@ -133,6 +144,18 @@ html {
             background: var(--light-bg);
             font-size: 1.6rem;
             color: var(--light-color);
+        }
+
+
+        label {
+            font-size: 2.5rem;
+            color: var(--black);
+            margin: 0 1rem;
+            cursor: pointer;
+
+            &:hover {
+                color: var(--yellow);
+            }
         }
     }
 }

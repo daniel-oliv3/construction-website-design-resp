@@ -36,6 +36,12 @@ html::-webkit-scrollbar-thumb {
   background: var(--yellow);
 }
 
+@keyframes fadeIn {
+  0% {
+    top: 50%;
+    opacity: 0;
+  }
+}
 .header {
   position: sticky;
   top: 0;
@@ -92,9 +98,13 @@ html::-webkit-scrollbar-thumb {
   background: var(--white);
   box-shadow: var(--box-shadow);
   padding: 1rem;
-  display: flex;
+  display: none;
   align-items: center;
   gap: 1rem;
+  animation: fadeIn 0.2s linear;
+}
+.header .search-form:active {
+  display: flex;
 }
 .header .search-form input {
   width: 100%;
@@ -102,6 +112,15 @@ html::-webkit-scrollbar-thumb {
   background: var(--light-bg);
   font-size: 1.6rem;
   color: var(--light-color);
+}
+.header .search-form label {
+  font-size: 2.5rem;
+  color: var(--black);
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.header .search-form label:hover {
+  color: var(--yellow);
 }
 
 @media (max-width: 1200px) {
