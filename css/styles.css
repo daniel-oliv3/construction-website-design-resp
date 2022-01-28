@@ -96,6 +96,13 @@ html::-webkit-scrollbar-thumb {
   align-items: center;
   gap: 1rem;
 }
+.header .search-form input {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  background: var(--light-bg);
+  font-size: 1.6rem;
+  color: var(--light-color);
+}
 
 @media (max-width: 1200px) {
   .header {

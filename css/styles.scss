@@ -125,6 +125,15 @@ html {
         display: flex;
         align-items: center;
         gap: 1rem;
+
+
+        input {
+            width: 100%;
+            padding: 1.2rem 1.4rem;
+            background: var(--light-bg);
+            font-size: 1.6rem;
+            color: var(--light-color);
+        }
     }
 }
 
