@@ -75,7 +75,7 @@ html {
     }
 }
 
-@keyframes fadeIn {
+@keyframes fadeIn{
     0%{
         top: 50%;
         opacity: 0;
@@ -134,7 +134,7 @@ html {
         gap: 1rem;
         animation: fadeIn .2s linear;
 
-        &:active {
+        &:active{
             display: flex;
         }
 
