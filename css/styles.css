@@ -138,6 +138,7 @@ html::-webkit-scrollbar-thumb {
   font-size: 2.5rem;
   color: var(--black);
   text-transform: capitalize;
+  padding-bottom: 1rem;
   text-transform: uppercase;
 }
 .header .login-form .box {
@@ -146,7 +147,28 @@ html::-webkit-scrollbar-thumb {
   background: var(--light-bg);
   font-size: 1.6rem;
   color: var(--light-color);
-  margin: 0.7rem;
+  margin: 0.7rem 0;
+}
+.header .login-form .flex {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+.header .login-form .flex label {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  cursor: pointer;
+}
+.header .login-form .flex a {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  margin-left: auto;
+}
+.header .login-form .flex a:hover {
+  color: var(--yellow);
+  text-decoration: underline;
 }
 
 @media (max-width: 1200px) {

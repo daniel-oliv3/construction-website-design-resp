@@ -173,6 +173,7 @@ html {
 
         h3 {
             @include titleText(2.5rem);
+            padding-bottom: 1rem;
             text-transform: uppercase;
         }
 
@@ -182,7 +183,32 @@ html {
             background: var(--light-bg);
             font-size: 1.6rem;
             color: var(--light-color);
-            margin: .7rem;
+            margin: .7rem 0;
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            padding-top: 1.5rem;
+            padding-bottom: 1rem;
+
+            label {
+                font-size: 1.5rem;
+                color: var(--light-color);
+                cursor: pointer;
+            }
+
+            a {
+                font-size: 1.5rem;
+                color: var(--light-color);
+                margin-left: auto;
+
+                &:hover {
+                    color: var(--yellow);
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }
