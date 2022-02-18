@@ -252,7 +252,7 @@ html {
 }
 
 
-.c {
+.contact-info {
     position: fixed;
     top: 0;
     right: 0;
@@ -261,8 +261,25 @@ html {
     box-shadow: 0 0 0 100vw rgba(0, 0, 0, .7);
     height: 100%;
     text-align: center;
-    z-index: 110;
+    z-index: 1100;
+    padding: 0 2rem;
+    padding-top: 5rem;
+
+
+    .info {
+        i {
+            @include iconsBox();
+            margin-bottom: .5rem;
+        }
+
+        h3 {
+            @include titleText(2rem);
+            padding: 1rem 0;
+        }
+    }
+
 }
+
 
 
 
