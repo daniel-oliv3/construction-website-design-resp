@@ -10,7 +10,7 @@ document.querySelector('#search-btn').onclick = () => {
     searchForm.classList.toggle('active');
 };
 
-document.querySelector('#login-form').onclick = () => {
+document.querySelector('#login-btn').onclick = () => {
     loginForm.classList.toggle('active');
 };
 
