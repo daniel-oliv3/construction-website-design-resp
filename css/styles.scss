@@ -252,6 +252,17 @@ html {
 }
 
 
+.c {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30rem;
+    background: var(--white);
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, .7);
+    height: 100%;
+    text-align: center;
+    z-index: 110;
+}
 
 
 
@@ -261,8 +272,7 @@ html {
 
 
 
-
-//Media-Queries
+/* ======= Responsividade ======= */
 @media (max-width:1200px){
 
     .header{
