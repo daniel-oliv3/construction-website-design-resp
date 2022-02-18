@@ -211,12 +211,16 @@ html::-webkit-scrollbar-thumb {
   right: 0;
   width: 35rem;
   background: var(--white);
-  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
   height: 100%;
   text-align: center;
   z-index: 1100;
   padding: 0 2rem;
   padding-top: 5rem;
+  display: none;
+}
+.contact-info.active {
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+  display: block;
 }
 .contact-info #close-contact-info {
   position: absolute;
