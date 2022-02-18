@@ -150,6 +150,9 @@ html::-webkit-scrollbar-thumb {
   animation: fadeIn 0.2s linear;
   display: none;
 }
+.header .login-form.active {
+  display: block;
+}
 .header .login-form h3 {
   font-size: 2.5rem;
   color: var(--black);

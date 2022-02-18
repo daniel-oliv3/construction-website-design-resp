@@ -188,6 +188,10 @@ html {
         animation: fadeIn .2s linear;
         display: none;
 
+        &.active {
+            display: block;
+        }
+
         h3 {
             @include titleText(2.5rem);
             padding-bottom: 1rem;
