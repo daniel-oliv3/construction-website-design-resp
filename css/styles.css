@@ -218,6 +218,9 @@ html::-webkit-scrollbar-thumb {
   padding: 0 2rem;
   padding-top: 5rem;
 }
+.contact-info .info {
+  padding: 2rem 0;
+}
 .contact-info .info i {
   height: 5rem;
   width: 5rem;
@@ -238,6 +241,29 @@ html::-webkit-scrollbar-thumb {
   color: var(--black);
   text-transform: capitalize;
   padding: 1rem 0;
+}
+.contact-info .info p {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  line-height: 2;
+}
+.contact-info .share {
+  padding-top: 1rem;
+}
+.contact-info .share a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  background: var(--light-bg);
+  color: var(--black);
+  cursor: pointer;
+  text-align: center;
+  margin: 0 0.3rem;
+}
+.contact-info .share a:hover {
+  background: var(--black);
+  color: var(--white);
 }
 
 /* ======= Responsividade ======= */
