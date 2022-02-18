@@ -145,6 +145,8 @@ html::-webkit-scrollbar-thumb {
   padding: 1.2rem 1.4rem;
   background: var(--light-bg);
   font-size: 1.6rem;
+  color: var(--light-color);
+  margin: 0.7rem;
 }
 
 @media (max-width: 1200px) {
