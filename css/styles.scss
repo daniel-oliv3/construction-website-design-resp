@@ -84,6 +84,11 @@ html {
     cursor: pointer;
     font-size: 1.7rem;
     text-transform: capitalize;
+
+    &:hover {
+        background: var(--yellow);
+        color: var(--black);
+    }
 }
 
 @keyframes fadeIn{
@@ -181,6 +186,7 @@ html {
         padding: 2rem;
         align-items: center;
         animation: fadeIn .2s linear;
+        display: none;
 
         h3 {
             @include titleText(2.5rem);
@@ -217,6 +223,23 @@ html {
 
                 &:hover {
                     color: var(--yellow);
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .btn {
+            width: 100%;
+        }
+
+        p {
+            @include graphText(1.5rem);
+            padding-top: 1.5rem;
+
+            a {
+                color: var(--yellow);
+
+                &:hover {
                     text-decoration: underline;
                 }
             }

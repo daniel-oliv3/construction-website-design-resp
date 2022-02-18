@@ -46,6 +46,10 @@ html::-webkit-scrollbar-thumb {
   font-size: 1.7rem;
   text-transform: capitalize;
 }
+.btn:hover {
+  background: var(--yellow);
+  color: var(--black);
+}
 
 @keyframes fadeIn {
   0% {
@@ -144,6 +148,7 @@ html::-webkit-scrollbar-thumb {
   padding: 2rem;
   align-items: center;
   animation: fadeIn 0.2s linear;
+  display: none;
 }
 .header .login-form h3 {
   font-size: 2.5rem;
@@ -179,6 +184,21 @@ html::-webkit-scrollbar-thumb {
 }
 .header .login-form .flex a:hover {
   color: var(--yellow);
+  text-decoration: underline;
+}
+.header .login-form .btn {
+  width: 100%;
+}
+.header .login-form p {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  line-height: 2;
+  padding-top: 1.5rem;
+}
+.header .login-form p a {
+  color: var(--yellow);
+}
+.header .login-form p a:hover {
   text-decoration: underline;
 }
 
