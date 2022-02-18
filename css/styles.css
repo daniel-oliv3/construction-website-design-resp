@@ -209,7 +209,7 @@ html::-webkit-scrollbar-thumb {
   position: fixed;
   top: 0;
   right: 0;
-  width: 30rem;
+  width: 35rem;
   background: var(--white);
   box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
   height: 100%;
@@ -217,6 +217,17 @@ html::-webkit-scrollbar-thumb {
   z-index: 1100;
   padding: 0 2rem;
   padding-top: 5rem;
+}
+.contact-info #close-contact-info {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+  font-size: 4rem;
+  color: var(--black);
+}
+.contact-info #close-contact-info:hover {
+  transform: rotate(90deg);
 }
 .contact-info .info {
   padding: 2rem 0;
@@ -248,7 +259,9 @@ html::-webkit-scrollbar-thumb {
   line-height: 2;
 }
 .contact-info .share {
-  padding-top: 1rem;
+  padding-top: 2rem;
+  border-top: var(--border);
+  margin-top: 1rem;
 }
 .contact-info .share a {
   height: 5rem;
