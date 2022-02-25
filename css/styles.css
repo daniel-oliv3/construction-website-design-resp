@@ -116,11 +116,12 @@ html::-webkit-scrollbar-thumb {
   box-shadow: var(--box-shadow);
   padding: 1rem;
   display: none;
+  /**/
   align-items: center;
   gap: 1rem;
   animation: fadeIn 0.2s linear;
 }
-.header .search-form:active {
+.header .search-form.active {
   display: flex;
 }
 .header .search-form input {

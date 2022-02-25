@@ -146,12 +146,12 @@ html {
         background: var(--white);
         box-shadow: var(--box-shadow);
         padding: 1rem;
-        display: none;
+        display: none; /**/
         align-items: center;
         gap: 1rem;
         animation: fadeIn .2s linear;
 
-        &:active{
+        &.active{
             display: flex;
         }
 
