@@ -49,3 +49,12 @@ window.onscroll = () => {
 }
 
 /**/
+/*Slide swiper*/
+var swiper = new Swiper(".home-slider", {
+    loop: true,
+    grapCursor: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});

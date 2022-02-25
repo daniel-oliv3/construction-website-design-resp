@@ -114,6 +114,7 @@ section {
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
+    background: var(--white);
 
     .logo {
         @include titleText(2.5rem);
@@ -335,11 +336,26 @@ section {
         &::before {
             content: '';
             position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(90deg, var(--white), transparent);
         }
 
         .content {
             width: 50rem;
             position: relative;
+
+            h3 {
+                @include titleText(6rem);
+                text-transform: uppercase;
+            }
+
+            p {
+                @include graphText(1.4rem);
+                padding: 1rem 0;
+            }
         }
     }
 }

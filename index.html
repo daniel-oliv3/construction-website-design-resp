@@ -7,7 +7,9 @@
     <title>Construção</title>
     <link rel="shortcut icon" href="images/favicon.ico"/>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
@@ -84,23 +86,23 @@
 
     <!-- ======= Home Section/Seção Inicial ======= -->
     <section class="home" id="home">
-        <div class="home-slide">
-            <div class="w">
-                <section class="slide" style="background: url(images/home-slide-1.jpg) no-repeat;">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <section class="swiper-slide slide" style="background: url(images/home-slide-1.jpg) no-repeat;">
                     <div class="content">
                         <h3>Nós fornecemos o melhor serviço</h3>
                         <p>Atirei o pau no gatis, per gatis num morreus Diuretics paradis num copo é motivis de denguis Viva Forevis.</p>
                         <a href="#about" class="btn">Iniciar</a>
                     </div>
                 </section>
-                <section class="slide" style="background: url(images/home-slide-2.jpg) no-repeat;">
+                <section class="swiper-slide slide" style="background: url(images/home-slide-2.jpg) no-repeat;">
                     <div class="content">
                         <h3>Fazendo o sonho ganhar vida</h3>
                         <p>Quem manda na minha terra sou euzis! Quem num gosta di mé, boa gentis num é Interagi no mé, cursus quis, vehicula.</p>
                         <a href="#about" class="btn">Iniciar</a>
                     </div>
                 </section>
-                <section class="slide" style="background: url(images/home-slide-3.jpg) no-repeat;">
+                <section class="swiper-slide slide" style="background: url(images/home-slide-3.jpg) no-repeat;">
                     <div class="content">
                         <h3>Do conceito à criação</h3>
                         <p>Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Manduma pindureta quium dia nois paga. Leite de capivaris.</p>
@@ -108,6 +110,8 @@
                     </div>
                 </section>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </section>
 
@@ -120,6 +124,7 @@
 
 
 
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.css"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -74,6 +74,7 @@ section {
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
+  background: var(--white);
 }
 .header .logo {
   font-size: 2.5rem;
@@ -305,10 +306,27 @@ section {
 .home .slide::before {
   content: "";
   position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, var(--white), transparent);
 }
 .home .slide .content {
   width: 50rem;
   position: relative;
+}
+.home .slide .content h3 {
+  font-size: 6rem;
+  color: var(--black);
+  text-transform: capitalize;
+  text-transform: uppercase;
+}
+.home .slide .content p {
+  font-size: 1.4rem;
+  color: var(--light-color);
+  line-height: 2;
+  padding: 1rem 0;
 }
 
 /* ======= Responsividade ======= */
