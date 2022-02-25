@@ -40,9 +40,12 @@ document.querySelector('#close-contact-info').onclick = () => {
 };
 
 
+/**/
 window.onscroll = () => {
     navbar.classList.remove('active');
     searchForm.classList.remove('active');
     loginForm.classList.remove('active');
     contactInfo.classList.remove('active');
 }
+
+/**/
