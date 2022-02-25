@@ -319,8 +319,30 @@ section {
     }
 }
 
-/*43m*/
 
+/* ======= Home Section/Seção Inicial ======= */
+.home {
+    padding: 0;
+
+    .slide {
+        min-height: 60rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+        background-size: cover !important;
+        background-position: center !important;
+
+        &::before {
+            content: '';
+            position: absolute;
+        }
+
+        .content {
+            width: 50rem;
+            position: relative;
+        }
+    }
+}
 
 
 

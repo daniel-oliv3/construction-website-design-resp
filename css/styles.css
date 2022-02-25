@@ -290,7 +290,27 @@ section {
   color: var(--white);
 }
 
-/*43m*/
+/* ======= Home Section/Seção Inicial ======= */
+.home {
+  padding: 0;
+}
+.home .slide {
+  min-height: 60rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.home .slide::before {
+  content: "";
+  position: absolute;
+}
+.home .slide .content {
+  width: 50rem;
+  position: relative;
+}
+
 /* ======= Responsividade ======= */
 @media (max-width: 1200px) {
   .header {
