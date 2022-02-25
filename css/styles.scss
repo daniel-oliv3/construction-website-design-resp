@@ -98,6 +98,7 @@ html {
     }
 }
 
+/* ======= Header Section/Seção de Cabeçalho ======= */
 .header {
     position: sticky;
     top: 0;
@@ -314,7 +315,7 @@ html {
     }
 }
 
-
+/*43m*/
 
 
 
@@ -353,7 +354,9 @@ html {
  
        .navbar{
           position: absolute;
-          top:99%; left:0; right:0;
+          top:99%; 
+          left:0; 
+          right:0;
           background: var(--white);
           border-top: var(--border);
           border-bottom: var(--border);
@@ -410,3 +413,17 @@ html {
     }
  
  }
+
+
+
+
+
+ /*
+Caminho para o gitbash 
+cd C:/Users/Daniel_Oliveira/Documents/GitHub/construction-website-design-resp
+
+SASS
+sass --watch ./css/styles.scss:./css/styles.css
+
+43m
+*/

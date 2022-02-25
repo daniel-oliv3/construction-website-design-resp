@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@700&family=Libre+Franklin:wght@100&family=Montserrat:wght@100;200;300;400;500;600&family=Open+Sans:wght@700&family=Poppins:wght@100;200;300;400;500;600&display=swap");
 :root {
   --yellow: #f5bf23;
@@ -57,6 +58,7 @@ html::-webkit-scrollbar-thumb {
     opacity: 0;
   }
 }
+/* ======= Header Section/Seção de Cabeçalho ======= */
 .header {
   position: sticky;
   top: 0;
@@ -283,6 +285,7 @@ html::-webkit-scrollbar-thumb {
   color: var(--white);
 }
 
+/*43m*/
 /* ======= Responsividade ======= */
 @media (max-width: 1200px) {
   .header {
@@ -351,5 +354,14 @@ html::-webkit-scrollbar-thumb {
     font-size: 2.5rem;
   }
 }
+/*
+Caminho para o gitbash 
+cd C:/Users/Daniel_Oliveira/Documents/GitHub/construction-website-design-resp
+
+SASS
+sass --watch ./css/styles.scss:./css/styles.css
+
+43m
+*/
 
 /*# sourceMappingURL=styles.css.map */
